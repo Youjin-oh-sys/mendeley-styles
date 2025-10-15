@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" default-locale="en-US">
+  <info>
+    <title>Korean Journal of Chemical Engineering (Elsevier)</title>
+    <id>http://www.zotero.org/styles/korean-journal-of-chemical-engineering</id>
+    <link href="http://www.zotero.org/styles/chemical-engineering-journal" rel="template"/>
+    <author>
+      <name>Custom by ChatGPT (KJChE format)</name>
+    </author>
+    <category citation-format="numeric"/>
+    <category field="engineering"/>
+    <summary>
+      Citation style for the Korean Journal of Chemical Engineering (KJChE). 
+      Based on ACS with modifications: numeric citation, comma + and author list, 
+      non-italic journal title, bold volume, no DOI.
+    </summary>
+    <updated>2025-10-15T00:00:00+09:00</updated>
+  </info>
+
+  <!-- In-text citation -->
+  <citation collapse="citation-number">
+    <layout prefix="[" suffix="]" delimiter=", ">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+
+  <!-- Bibliography section -->
+  <bibliography entry-spacing="0" line-spacing="1" et-al-min="6" et-al-use-first="5">
+    <layout>
+      <text variable="citation-number" prefix="(" suffix=") "/>
+      <group delimiter=", ">
+        <names variable="author">
+          <name name-as-sort-order="all" initialize-with="." delimiter=", " and="text"/>
+        </names>
+        <text variable="title"/>
+        <group delimiter=", ">
+          <text variable="container-title" font-style="normal"/>
+          <group delimiter=", ">
+            <text variable="volume" font-weight="bold"/>
+            <text variable="page"/>
+            <date variable="issued" prefix="(" suffix=")">
+              <date-part name="year"/>
+            </date>
+          </group>
+        </group>
+      </group>
+      <text suffix="."/>
+    </layout>
+  </bibliography>
+</style>
